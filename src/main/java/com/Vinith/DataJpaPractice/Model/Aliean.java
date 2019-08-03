@@ -1,0 +1,31 @@
+package com.Vinith.DataJpaPractice.Model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Aliean {
+	@Id
+	private int aid;
+	private String aname;
+	public int getAid() {
+		return aid;
+	}
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
+	public String getAname() {
+		return aname;
+	}
+	public void setAname(String aname) {
+		this.aname = aname;
+	}
+	@Override
+	public String toString() {
+		return "Aliean [aid=" + aid + ", aname=" + aname + "]";
+	}
+   
+	
+	
+
+}
